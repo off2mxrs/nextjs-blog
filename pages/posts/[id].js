@@ -3,6 +3,7 @@ import { getAllPostIds, getPostData } from '../../lib/posts';
 import Head from 'next/head';
 import Date from '../../components/date';
 import utilStyles from '../../styles/utils.module.css';
+import Image from 'next/image';
 
 export default function Post({ postData }) {
   return (
@@ -15,6 +16,14 @@ export default function Post({ postData }) {
         <div className={utilStyles.lightText}>
           <Date dateString={postData.date} />
         </div>
+        <Image
+                priority
+                src={postData.image}
+                className={''}
+                height={400}
+                width={400}
+                alt=""
+              />
         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
       </article>
     </Layout>

@@ -26,14 +26,15 @@ export default function Layout({ children, home }) {
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <header className={styles.header}>
+        {/* if home give big img */}
         {home ? (
           <>
             <Image
               priority
               src="/images/profile.jpg"
               className={utilStyles.borderCircle}
-              height={144}
-              width={144}
+              height={300}
+              width={300}
               alt=""
             />
             <h1 className={utilStyles.heading2Xl}>{name}</h1>

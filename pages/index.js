@@ -24,12 +24,22 @@ export default function Home({ allPostsData, allFirstData }) {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <section className={utilStyles.headingMd}>
-        <p>[Your Self Introduction]</p>
-        <p>
-          (This is a sample website - you’ll be building a site like this on{' '}
-          <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
-        </p>
+      <section className={`${utilStyles.headingMd} ${utilStyles.portContainer}`}>
+        <div>
+          <p>lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+          <p>Ut enim ad minim ut labore et dolore.</p>
+          <p>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div>
+          <Image
+                priority
+                src={'/images/handonhead.jpg'}
+                className={''}
+                height={140}
+                width={115}
+                alt=""
+              />
+          </div>
       </section>
 
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>

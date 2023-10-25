@@ -50,3 +50,13 @@
   .lightText {
     color: #666;
   }
+  
+  .portContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 1rem;
+    background-color: #1E7171;
+    border: black solid 1px;
+    /* border-radius: 41px 41px 0 0; */
+  }
